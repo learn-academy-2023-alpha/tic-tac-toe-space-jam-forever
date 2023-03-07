@@ -6,6 +6,8 @@ h1 {
   border: 2px solid black;
   height: 200px;
   width: 200px;
+  font-size: 150px;
+  text-align: center;
 }
 
 .gameBoard{
