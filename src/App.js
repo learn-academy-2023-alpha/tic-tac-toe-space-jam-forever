@@ -4,11 +4,18 @@ import './App.css'
 
 const App = () => {
   const [squares, setSquares] = useState(Array(9).fill(null))
+const [playerOne, setPlayerOne] = useState(true)
+
   const playerTurn = (index) => {
   let updatedSquares = [...squares]
+  if (playerOne){
     updatedSquares[index] = "❌"
     setSquares(updatedSquares)
-  }
+  } else 
+    updatedSquares[index] = "⭕️"
+    setSquares(updatedSquares)
+    setPlayerOne(!playerOne)
+}
 
   return (
 
