@@ -10,7 +10,6 @@ const App = () => {
     setSquares(updatedSquares)
   }
 
-  
   return (
 
     <>
